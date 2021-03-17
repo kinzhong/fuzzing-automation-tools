@@ -1,0 +1,88 @@
+Crash Analysis Report for .\boolector-crashes.log
+
+============ Overall Crash Analysis Findings ============
+Total Number of Crashes:                         868
+Total Number of Unique Bugs:                       3
+Heap Use After Free:                               1
+Unknown Error:                                     2
+
+================ Interesting Crashes ================
+
+=============================================================================================================================================
+Error No. #0
+Crash File Location: /home/kinzhong/Downloads/out/f01/crashes/id:000000,sig:06,src:000220+001446,time:5901001,op:splice,rep:4
+Diagnosis: Heap Use After Free
+AddressSanitiser Logs:
+===============================================================
+==15670==ERROR: AddressSanitizer: heap-use-after-free on address 0x603000000fd0 at pc 0x7f0ae5bf3405 bp 0x7ffe086e07d0 sp 0x7ffe086e07c8
+READ of size 8 at 0x603000000fd0 thread T0
+    #0 0x7f0ae5bf3404 in recursively_delete_smt_node /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c
+    #1 0x7f0ae5bf1e4d in release_smt_nodes /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:443:5
+    #2 0x7f0ae5bf1e4d in release_smt_internals /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:449
+    #3 0x7f0ae5be5ddd in parse_smt_parser /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:2956:3
+    #4 0x7f0ae59abc6b in parse_aux /home/kinzhong/Downloads/boolector/src/btorparse.c:68:15
+    #5 0x7f0ae59aa57c in btor_parse /home/kinzhong/Downloads/boolector/src/btorparse.c:235:9
+    #6 0x519682 in boolector_main /home/kinzhong/Downloads/boolector/src/btormain.c:1440:19
+    #7 0x7f0ae4754bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41bda9 in _start (/home/kinzhong/Downloads/boolector/build/bin/boolector+0x41bda9)
+
+0x603000000fd0 is located 0 bytes inside of 24-byte region [0x603000000fd0,0x603000000fe8)
+freed by thread T0 here:
+    #0 0x4dba90 in __interceptor_free.localalias.0 (/home/kinzhong/Downloads/boolector/build/bin/boolector+0x4dba90)
+    #1 0x7f0ae5bf4573 in delete_smt_node /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:347:3
+    #2 0x7f0ae5bf3874 in recursively_delete_smt_node /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:394:5
+    #3 0x7f0ae5bf1e4d in release_smt_nodes /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:443:5
+    #4 0x7f0ae5bf1e4d in release_smt_internals /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:449
+    #5 0x7f0ae5be5ddd in parse_smt_parser /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:2956:3
+    #6 0x7f0ae59abc6b in parse_aux /home/kinzhong/Downloads/boolector/src/btorparse.c:68:15
+    #7 0x7f0ae59aa57c in btor_parse /home/kinzhong/Downloads/boolector/src/btorparse.c:235:9
+    #8 0x519682 in boolector_main /home/kinzhong/Downloads/boolector/src/btormain.c:1440:19
+    #9 0x7f0ae4754bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+
+previously allocated by thread T0 here:
+    #0 0x4dbc60 in __interceptor_malloc (/home/kinzhong/Downloads/boolector/build/bin/boolector+0x4dbc60)
+    #1 0x7f0ae5d2cfbf in btor_mem_malloc /home/kinzhong/Downloads/boolector/src/utils/btormem.c:75:12
+    #2 0x7f0ae5be53f1 in cons /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:255:3
+    #3 0x7f0ae5be53f1 in parse /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:2889
+    #4 0x7f0ae5be53f1 in parse_smt_parser /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c:2955
+    #5 0x7f0ae59abc6b in parse_aux /home/kinzhong/Downloads/boolector/src/btorparse.c:68:15
+    #6 0x7f0ae59aa57c in btor_parse /home/kinzhong/Downloads/boolector/src/btorparse.c:235:9
+    #7 0x519682 in boolector_main /home/kinzhong/Downloads/boolector/src/btormain.c:1440:19
+    #8 0x7f0ae4754bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+
+SUMMARY: AddressSanitizer: heap-use-after-free /home/kinzhong/Downloads/boolector/src/parser/btorsmt.c in recursively_delete_smt_node
+Shadow bytes around the buggy address:
+  0x0c067fff81a0: fd fd fd fd fa fa fd fd fd fd fa fa fd fd fd fd
+  0x0c067fff81b0: fa fa 00 00 00 00 fa fa 00 00 00 00 fa fa 00 00
+  0x0c067fff81c0: 00 00 fa fa 00 00 00 00 fa fa 00 00 00 00 fa fa
+  0x0c067fff81d0: 00 00 00 00 fa fa 00 00 00 00 fa fa fd fd fd fd
+  0x0c067fff81e0: fa fa 00 00 07 fa fa fa 00 00 00 05 fa fa fd fd
+=>0x0c067fff81f0: fd fd fa fa fd fd fd fd fa fa[fd]fd fd fa fa fa
+  0x0c067fff8200: fd fd fd fa fa fa 00 00 00 00 fa fa fa fa fa fa
+  0x0c067fff8210: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8220: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8230: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c067fff8240: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==15670==ABORTING
+
+=============================================================================================================================================
+

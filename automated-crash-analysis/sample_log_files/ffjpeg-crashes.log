@@ -1,0 +1,1006 @@
+Error No. #0
+/home/kinzhong/Downloads/ffjpeg/out/f01/crashes/id:000000,sig:06,src:000000,op:flip1,pos:20
+==13041==ERROR: AddressSanitizer failed to allocate 0x480304b000 (309288284160) bytes of LargeMmapAllocator (error code: 12)
+==13041==Process memory map follows:
+	0x000000400000-0x000000548000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000747000-0x000000748000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000748000-0x00000074b000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x00000074b000-0x0000013c0000	
+	0x00007fff7000-0x00008fff7000	
+	0x00008fff7000-0x02008fff7000	
+	0x02008fff7000-0x10007fff8000	
+	0x600000000000-0x607000000000	
+	0x607000000000-0x607000010000	
+	0x607000010000-0x607e00000000	
+	0x607e00000000-0x607e00010000	
+	0x607e00010000-0x616000000000	
+	0x616000000000-0x616000010000	
+	0x616000010000-0x616e00000000	
+	0x616e00000000-0x616e00010000	
+	0x616e00010000-0x621000000000	
+	0x621000000000-0x621000010000	
+	0x621000010000-0x621e00000000	
+	0x621e00000000-0x621e00010000	
+	0x621e00010000-0x640000000000	
+	0x640000000000-0x640000003000	
+	0x7fda53400000-0x7fda53500000	
+	0x7fda53600000-0x7fda53700000	
+	0x7fda53800000-0x7fda53900000	
+	0x7fda53a00000-0x7fda53b00000	
+	0x7fda53b81000-0x7fda55ed3000	
+	0x7fda55ed3000-0x7fda560ba000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fda560ba000-0x7fda562ba000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fda562ba000-0x7fda562be000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fda562be000-0x7fda562c0000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fda562c0000-0x7fda562c4000	
+	0x7fda562c4000-0x7fda562db000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fda562db000-0x7fda564da000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fda564da000-0x7fda564db000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fda564db000-0x7fda564dc000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fda564dc000-0x7fda564df000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fda564df000-0x7fda566de000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fda566de000-0x7fda566df000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fda566df000-0x7fda566e0000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fda566e0000-0x7fda5687d000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fda5687d000-0x7fda56a7c000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fda56a7c000-0x7fda56a7d000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fda56a7d000-0x7fda56a7e000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fda56a7e000-0x7fda56a85000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fda56a85000-0x7fda56c84000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fda56c84000-0x7fda56c85000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fda56c85000-0x7fda56c86000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fda56c86000-0x7fda56ca0000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fda56ca0000-0x7fda56e9f000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fda56e9f000-0x7fda56ea0000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fda56ea0000-0x7fda56ea1000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fda56ea1000-0x7fda56ea5000	
+	0x7fda56ea5000-0x7fda56ece000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fda56f49000-0x7fda570b8000	
+	0x7fda570b8000-0x7fda570ce000	
+	0x7fda570ce000-0x7fda570cf000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fda570cf000-0x7fda570d0000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fda570d0000-0x7fda570d1000	
+	0x7ffc371da000-0x7ffc371fb000	[stack]
+	0x7ffc371fb000-0x7ffc371fe000	[vvar]
+	0x7ffc371fe000-0x7ffc37200000	[vdso]
+	0xffffffffff600000-0xffffffffff601000	[vsyscall]
+==13041==End of process memory map.
+==13041==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_common.cc:120 "((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e56b2 in __sanitizer::ReportMmapFailureAndDie(unsigned long, char const*, char const*, int, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e56b2)
+    #3 0x4efb35 in __sanitizer::MmapOrDie(unsigned long, char const*, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4efb35)
+    #4 0x4233fd in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4233fd)
+    #5 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #6 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #7 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #8 0x7fda55ef4bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #9 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #1
+/home/kinzhong/Downloads/ffjpeg/out/f01/crashes/id:000001,sig:06,src:000000,op:flip1,pos:21
+==13427==WARNING: AddressSanitizer failed to allocate 0x1200c0048030 bytes
+==13427==AddressSanitizer's allocator is terminating the process instead of returning 0
+==13427==If you don't like this behavior set allocator_may_return_null=1
+==13427==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f2f0b026bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #2
+/home/kinzhong/Downloads/ffjpeg/out/f01/crashes/id:000002,sig:06,src:000000,op:flip1,pos:21
+==13563==WARNING: AddressSanitizer failed to allocate 0x24018048030 bytes
+==13563==AddressSanitizer's allocator is terminating the process instead of returning 0
+==13563==If you don't like this behavior set allocator_may_return_null=1
+==13563==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f6b0ba34bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #3
+/home/kinzhong/Downloads/ffjpeg/out/f01/crashes/id:000003,sig:06,src:000000,op:int32,pos:18,val:+2147483647
+==13715==WARNING: AddressSanitizer failed to allocate 0xffffffffffff9ffc bytes
+==13715==AddressSanitizer's allocator is terminating the process instead of returning 0
+==13715==If you don't like this behavior set allocator_may_return_null=1
+==13715==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7f1dcd31bbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #4
+/home/kinzhong/Downloads/ffjpeg/out/f01/crashes/id:000004,sig:06,src:000063,op:flip2,pos:21
+==13843==WARNING: AddressSanitizer failed to allocate 0xffffffffc0000010 bytes
+==13843==AddressSanitizer's allocator is terminating the process instead of returning 0
+==13843==If you don't like this behavior set allocator_may_return_null=1
+==13843==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7ffa9a73bbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #5
+/home/kinzhong/Downloads/ffjpeg/out/f01/crashes/id:000005,sig:06,src:000087,op:int32,pos:18,val:+2147483647
+==14016==WARNING: AddressSanitizer failed to allocate 0xffffffffffffcdec bytes
+==14016==AddressSanitizer's allocator is terminating the process instead of returning 0
+==14016==If you don't like this behavior set allocator_may_return_null=1
+==14016==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7f780f898bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #6
+/home/kinzhong/Downloads/ffjpeg/out/f02/crashes/id:000000,sig:06,src:000000,op:havoc,rep:2
+==14126==WARNING: AddressSanitizer failed to allocate 0xa8ad18d7b498a8 bytes
+==14126==AddressSanitizer's allocator is terminating the process instead of returning 0
+==14126==If you don't like this behavior set allocator_may_return_null=1
+==14126==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7fa20e0ddbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #7
+/home/kinzhong/Downloads/ffjpeg/out/f02/crashes/id:000001,sig:06,src:000000,op:havoc,rep:4
+==14256==WARNING: AddressSanitizer failed to allocate 0xffffffffd21ac0c0 bytes
+==14256==AddressSanitizer's allocator is terminating the process instead of returning 0
+==14256==If you don't like this behavior set allocator_may_return_null=1
+==14256==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7fbee96dfbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #8
+/home/kinzhong/Downloads/ffjpeg/out/f02/crashes/id:000002,sig:06,src:000000,op:havoc,rep:4
+==15092==ERROR: AddressSanitizer failed to allocate 0x90068af000 (618585059328) bytes of LargeMmapAllocator (error code: 12)
+==15092==Process memory map follows:
+	0x000000400000-0x000000548000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000747000-0x000000748000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000748000-0x00000074b000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x00000074b000-0x0000013c0000	
+	0x00007fff7000-0x00008fff7000	
+	0x00008fff7000-0x02008fff7000	
+	0x02008fff7000-0x10007fff8000	
+	0x600000000000-0x607000000000	
+	0x607000000000-0x607000010000	
+	0x607000010000-0x607e00000000	
+	0x607e00000000-0x607e00010000	
+	0x607e00010000-0x616000000000	
+	0x616000000000-0x616000010000	
+	0x616000010000-0x616e00000000	
+	0x616e00000000-0x616e00010000	
+	0x616e00010000-0x621000000000	
+	0x621000000000-0x621000010000	
+	0x621000010000-0x621e00000000	
+	0x621e00000000-0x621e00010000	
+	0x621e00010000-0x640000000000	
+	0x640000000000-0x640000003000	
+	0x7fe47d400000-0x7fe47d500000	
+	0x7fe47d600000-0x7fe47d700000	
+	0x7fe47d800000-0x7fe47d900000	
+	0x7fe47da00000-0x7fe47db00000	
+	0x7fe47dbf0000-0x7fe47ff42000	
+	0x7fe47ff42000-0x7fe480129000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fe480129000-0x7fe480329000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fe480329000-0x7fe48032d000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fe48032d000-0x7fe48032f000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fe48032f000-0x7fe480333000	
+	0x7fe480333000-0x7fe48034a000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fe48034a000-0x7fe480549000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fe480549000-0x7fe48054a000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fe48054a000-0x7fe48054b000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fe48054b000-0x7fe48054e000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fe48054e000-0x7fe48074d000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fe48074d000-0x7fe48074e000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fe48074e000-0x7fe48074f000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fe48074f000-0x7fe4808ec000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fe4808ec000-0x7fe480aeb000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fe480aeb000-0x7fe480aec000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fe480aec000-0x7fe480aed000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fe480aed000-0x7fe480af4000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fe480af4000-0x7fe480cf3000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fe480cf3000-0x7fe480cf4000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fe480cf4000-0x7fe480cf5000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fe480cf5000-0x7fe480d0f000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fe480d0f000-0x7fe480f0e000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fe480f0e000-0x7fe480f0f000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fe480f0f000-0x7fe480f10000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fe480f10000-0x7fe480f14000	
+	0x7fe480f14000-0x7fe480f3d000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fe480fb8000-0x7fe481127000	
+	0x7fe481127000-0x7fe48113d000	
+	0x7fe48113d000-0x7fe48113e000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fe48113e000-0x7fe48113f000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fe48113f000-0x7fe481140000	
+	0x7ffd0f8bb000-0x7ffd0f8dc000	[stack]
+	0x7ffd0f966000-0x7ffd0f969000	[vvar]
+	0x7ffd0f969000-0x7ffd0f96b000	[vdso]
+	0xffffffffff600000-0xffffffffff601000	[vsyscall]
+==15092==End of process memory map.
+==15092==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_common.cc:120 "((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e56b2 in __sanitizer::ReportMmapFailureAndDie(unsigned long, char const*, char const*, int, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e56b2)
+    #3 0x4efb35 in __sanitizer::MmapOrDie(unsigned long, char const*, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4efb35)
+    #4 0x4233fd in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4233fd)
+    #5 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #6 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #7 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #8 0x7fe47ff63bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #9 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #9
+/home/kinzhong/Downloads/ffjpeg/out/f02/crashes/id:000003,sig:06,src:000000,op:havoc,rep:8
+==15230==WARNING: AddressSanitizer failed to allocate 0x1200c048030 bytes
+==15230==AddressSanitizer's allocator is terminating the process instead of returning 0
+==15230==If you don't like this behavior set allocator_may_return_null=1
+==15230==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f90fec0fbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #10
+/home/kinzhong/Downloads/ffjpeg/out/f02/crashes/id:000004,sig:06,src:000000,op:havoc,rep:8
+==15366==ERROR: AddressSanitizer failed to allocate 0xc0c0c3000 (51741732864) bytes of LargeMmapAllocator (error code: 12)
+==15366==Process memory map follows:
+	0x000000400000-0x000000548000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000747000-0x000000748000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000748000-0x00000074b000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x00000074b000-0x0000013c0000	
+	0x00007fff7000-0x00008fff7000	
+	0x00008fff7000-0x02008fff7000	
+	0x02008fff7000-0x10007fff8000	
+	0x600000000000-0x603000000000	
+	0x603000000000-0x603000010000	
+	0x603000010000-0x603e00000000	
+	0x603e00000000-0x603e00010000	
+	0x603e00010000-0x607000000000	
+	0x607000000000-0x607000010000	
+	0x607000010000-0x607e00000000	
+	0x607e00000000-0x607e00010000	
+	0x607e00010000-0x611000000000	
+	0x611000000000-0x611000010000	
+	0x611000010000-0x611e00000000	
+	0x611e00000000-0x611e00010000	
+	0x611e00010000-0x615000000000	
+	0x615000000000-0x615000010000	
+	0x615000010000-0x615e00000000	
+	0x615e00000000-0x615e00010000	
+	0x615e00010000-0x616000000000	
+	0x616000000000-0x616000010000	
+	0x616000010000-0x616e00000000	
+	0x616e00000000-0x616e00010000	
+	0x616e00010000-0x621000000000	
+	0x621000000000-0x621000010000	
+	0x621000010000-0x621e00000000	
+	0x621e00000000-0x621e00010000	
+	0x621e00010000-0x622000000000	
+	0x622000000000-0x622000010000	
+	0x622000010000-0x622e00000000	
+	0x622e00000000-0x622e00010000	
+	0x622e00010000-0x624000000000	
+	0x624000000000-0x624000010000	
+	0x624000010000-0x624e00000000	
+	0x624e00000000-0x624e00010000	
+	0x624e00010000-0x640000000000	
+	0x640000000000-0x640000003000	
+	0x7efedd6eb000-0x7eff4e700000	
+	0x7eff4e800000-0x7eff4e900000	
+	0x7eff4ea00000-0x7eff4eb00000	
+	0x7eff4ec00000-0x7eff4ed00000	
+	0x7eff4ed87000-0x7eff510d9000	
+	0x7eff510d9000-0x7eff512c0000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7eff512c0000-0x7eff514c0000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7eff514c0000-0x7eff514c4000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7eff514c4000-0x7eff514c6000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7eff514c6000-0x7eff514ca000	
+	0x7eff514ca000-0x7eff514e1000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7eff514e1000-0x7eff516e0000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7eff516e0000-0x7eff516e1000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7eff516e1000-0x7eff516e2000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7eff516e2000-0x7eff516e5000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7eff516e5000-0x7eff518e4000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7eff518e4000-0x7eff518e5000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7eff518e5000-0x7eff518e6000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7eff518e6000-0x7eff51a83000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7eff51a83000-0x7eff51c82000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7eff51c82000-0x7eff51c83000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7eff51c83000-0x7eff51c84000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7eff51c84000-0x7eff51c8b000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7eff51c8b000-0x7eff51e8a000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7eff51e8a000-0x7eff51e8b000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7eff51e8b000-0x7eff51e8c000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7eff51e8c000-0x7eff51ea6000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7eff51ea6000-0x7eff520a5000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7eff520a5000-0x7eff520a6000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7eff520a6000-0x7eff520a7000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7eff520a7000-0x7eff520ab000	
+	0x7eff520ab000-0x7eff520d4000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7eff5214f000-0x7eff522be000	
+	0x7eff522be000-0x7eff522d4000	
+	0x7eff522d4000-0x7eff522d5000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7eff522d5000-0x7eff522d6000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7eff522d6000-0x7eff522d7000	
+	0x7ffed3a85000-0x7ffed3aa6000	[stack]
+	0x7ffed3b85000-0x7ffed3b88000	[vvar]
+	0x7ffed3b88000-0x7ffed3b8a000	[vdso]
+	0xffffffffff600000-0xffffffffff601000	[vsyscall]
+==15366==End of process memory map.
+==15366==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_common.cc:120 "((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e56b2 in __sanitizer::ReportMmapFailureAndDie(unsigned long, char const*, char const*, int, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e56b2)
+    #3 0x4efb35 in __sanitizer::MmapOrDie(unsigned long, char const*, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4efb35)
+    #4 0x427ac1 in __asan::Allocator::Allocate(unsigned long, unsigned long, __sanitizer::BufferedStackTrace*, __asan::AllocType, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x427ac1)
+    #5 0x421bdb in __asan::asan_calloc(unsigned long, unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x421bdb)
+    #6 0x4d1d72 in calloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1d72)
+    #7 0x50f79a in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:734:21
+    #8 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #9 0x7eff510fabf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #10 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #11
+/home/kinzhong/Downloads/ffjpeg/out/f03/crashes/id:000000,sig:06,src:000000,op:havoc,rep:2
+==15730==WARNING: AddressSanitizer failed to allocate 0x120000120000000 bytes
+==15730==AddressSanitizer's allocator is terminating the process instead of returning 0
+==15730==If you don't like this behavior set allocator_may_return_null=1
+==15730==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f307c5b5bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #12
+/home/kinzhong/Downloads/ffjpeg/out/f03/crashes/id:000001,sig:06,src:000000,op:havoc,rep:16
+==15865==ERROR: AddressSanitizer failed to allocate 0xbe999e000 (51163815936) bytes of LargeMmapAllocator (error code: 12)
+==15865==Process memory map follows:
+	0x000000400000-0x000000548000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000747000-0x000000748000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000748000-0x00000074b000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x00000074b000-0x0000013c0000	
+	0x00007fff7000-0x00008fff7000	
+	0x00008fff7000-0x02008fff7000	
+	0x02008fff7000-0x10007fff8000	
+	0x600000000000-0x607000000000	
+	0x607000000000-0x607000010000	
+	0x607000010000-0x607e00000000	
+	0x607e00000000-0x607e00010000	
+	0x607e00010000-0x616000000000	
+	0x616000000000-0x616000010000	
+	0x616000010000-0x616e00000000	
+	0x616e00000000-0x616e00010000	
+	0x616e00010000-0x621000000000	
+	0x621000000000-0x621000010000	
+	0x621000010000-0x621e00000000	
+	0x621e00000000-0x621e00010000	
+	0x621e00010000-0x640000000000	
+	0x640000000000-0x640000003000	
+	0x7f38aa500000-0x7f38aa600000	
+	0x7f38aa700000-0x7f38aa800000	
+	0x7f38aa900000-0x7f38aaa00000	
+	0x7f38aab00000-0x7f38aac00000	
+	0x7f38aac74000-0x7f38acfc6000	
+	0x7f38acfc6000-0x7f38ad1ad000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f38ad1ad000-0x7f38ad3ad000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f38ad3ad000-0x7f38ad3b1000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f38ad3b1000-0x7f38ad3b3000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f38ad3b3000-0x7f38ad3b7000	
+	0x7f38ad3b7000-0x7f38ad3ce000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f38ad3ce000-0x7f38ad5cd000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f38ad5cd000-0x7f38ad5ce000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f38ad5ce000-0x7f38ad5cf000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f38ad5cf000-0x7f38ad5d2000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f38ad5d2000-0x7f38ad7d1000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f38ad7d1000-0x7f38ad7d2000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f38ad7d2000-0x7f38ad7d3000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f38ad7d3000-0x7f38ad970000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f38ad970000-0x7f38adb6f000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f38adb6f000-0x7f38adb70000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f38adb70000-0x7f38adb71000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f38adb71000-0x7f38adb78000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f38adb78000-0x7f38add77000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f38add77000-0x7f38add78000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f38add78000-0x7f38add79000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f38add79000-0x7f38add93000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f38add93000-0x7f38adf92000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f38adf92000-0x7f38adf93000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f38adf93000-0x7f38adf94000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f38adf94000-0x7f38adf98000	
+	0x7f38adf98000-0x7f38adfc1000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f38ae03c000-0x7f38ae1ab000	
+	0x7f38ae1ab000-0x7f38ae1c1000	
+	0x7f38ae1c1000-0x7f38ae1c2000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f38ae1c2000-0x7f38ae1c3000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f38ae1c3000-0x7f38ae1c4000	
+	0x7ffd42db1000-0x7ffd42dd2000	[stack]
+	0x7ffd42df1000-0x7ffd42df4000	[vvar]
+	0x7ffd42df4000-0x7ffd42df6000	[vdso]
+	0xffffffffff600000-0xffffffffff601000	[vsyscall]
+==15865==End of process memory map.
+==15865==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_common.cc:120 "((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e56b2 in __sanitizer::ReportMmapFailureAndDie(unsigned long, char const*, char const*, int, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e56b2)
+    #3 0x4efb35 in __sanitizer::MmapOrDie(unsigned long, char const*, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4efb35)
+    #4 0x4233fd in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4233fd)
+    #5 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #6 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #7 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #8 0x7f38acfe7bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #9 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #13
+/home/kinzhong/Downloads/ffjpeg/out/f03/crashes/id:000002,sig:06,src:000000,op:havoc,rep:4
+==16009==WARNING: AddressSanitizer failed to allocate 0x2881b048030 bytes
+==16009==AddressSanitizer's allocator is terminating the process instead of returning 0
+==16009==If you don't like this behavior set allocator_may_return_null=1
+==16009==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f8d50451bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #14
+/home/kinzhong/Downloads/ffjpeg/out/f03/crashes/id:000003,sig:06,src:000000,op:havoc,rep:8
+==16146==WARNING: AddressSanitizer failed to allocate 0xffffffffffff9ffc bytes
+==16146==AddressSanitizer's allocator is terminating the process instead of returning 0
+==16146==If you don't like this behavior set allocator_may_return_null=1
+==16146==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7f4fe5358bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #15
+/home/kinzhong/Downloads/ffjpeg/out/f03/crashes/id:000004,sig:06,src:000000,op:havoc,rep:8
+==16283==WARNING: AddressSanitizer failed to allocate 0xffffffffffef89a0 bytes
+==16283==AddressSanitizer's allocator is terminating the process instead of returning 0
+==16283==If you don't like this behavior set allocator_may_return_null=1
+==16283==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7fae2d9acbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #16
+/home/kinzhong/Downloads/ffjpeg/out/f03/crashes/id:000005,sig:06,src:000042,op:havoc,rep:8
+==16424==WARNING: AddressSanitizer failed to allocate 0xffffffffc9c42a20 bytes
+==16424==AddressSanitizer's allocator is terminating the process instead of returning 0
+==16424==If you don't like this behavior set allocator_may_return_null=1
+==16424==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7fba8f69bbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #17
+/home/kinzhong/Downloads/ffjpeg/out/f04/crashes/id:000000,sig:06,src:000000,op:havoc,rep:4
+==16634==WARNING: AddressSanitizer failed to allocate 0xc0bf388c3321000 bytes
+==16634==AddressSanitizer's allocator is terminating the process instead of returning 0
+==16634==If you don't like this behavior set allocator_may_return_null=1
+==16634==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f6998e23bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #18
+/home/kinzhong/Downloads/ffjpeg/out/f04/crashes/id:000001,sig:06,src:000000,op:havoc,rep:2
+==16776==ERROR: AddressSanitizer failed to allocate 0x879f9bf000 (582498381824) bytes of LargeMmapAllocator (error code: 12)
+==16776==Process memory map follows:
+	0x000000400000-0x000000548000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000747000-0x000000748000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000748000-0x00000074b000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x00000074b000-0x0000013c0000	
+	0x00007fff7000-0x00008fff7000	
+	0x00008fff7000-0x02008fff7000	
+	0x02008fff7000-0x10007fff8000	
+	0x600000000000-0x607000000000	
+	0x607000000000-0x607000010000	
+	0x607000010000-0x607e00000000	
+	0x607e00000000-0x607e00010000	
+	0x607e00010000-0x616000000000	
+	0x616000000000-0x616000010000	
+	0x616000010000-0x616e00000000	
+	0x616e00000000-0x616e00010000	
+	0x616e00010000-0x621000000000	
+	0x621000000000-0x621000010000	
+	0x621000010000-0x621e00000000	
+	0x621e00000000-0x621e00010000	
+	0x621e00010000-0x640000000000	
+	0x640000000000-0x640000003000	
+	0x7f72c0800000-0x7f72c0900000	
+	0x7f72c0a00000-0x7f72c0b00000	
+	0x7f72c0c00000-0x7f72c0d00000	
+	0x7f72c0e00000-0x7f72c0f00000	
+	0x7f72c0f71000-0x7f72c32c3000	
+	0x7f72c32c3000-0x7f72c34aa000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f72c34aa000-0x7f72c36aa000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f72c36aa000-0x7f72c36ae000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f72c36ae000-0x7f72c36b0000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f72c36b0000-0x7f72c36b4000	
+	0x7f72c36b4000-0x7f72c36cb000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f72c36cb000-0x7f72c38ca000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f72c38ca000-0x7f72c38cb000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f72c38cb000-0x7f72c38cc000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f72c38cc000-0x7f72c38cf000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f72c38cf000-0x7f72c3ace000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f72c3ace000-0x7f72c3acf000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f72c3acf000-0x7f72c3ad0000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f72c3ad0000-0x7f72c3c6d000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f72c3c6d000-0x7f72c3e6c000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f72c3e6c000-0x7f72c3e6d000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f72c3e6d000-0x7f72c3e6e000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f72c3e6e000-0x7f72c3e75000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f72c3e75000-0x7f72c4074000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f72c4074000-0x7f72c4075000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f72c4075000-0x7f72c4076000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f72c4076000-0x7f72c4090000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f72c4090000-0x7f72c428f000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f72c428f000-0x7f72c4290000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f72c4290000-0x7f72c4291000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f72c4291000-0x7f72c4295000	
+	0x7f72c4295000-0x7f72c42be000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f72c4339000-0x7f72c44a8000	
+	0x7f72c44a8000-0x7f72c44be000	
+	0x7f72c44be000-0x7f72c44bf000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f72c44bf000-0x7f72c44c0000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f72c44c0000-0x7f72c44c1000	
+	0x7ffda7937000-0x7ffda7958000	[stack]
+	0x7ffda79e6000-0x7ffda79e9000	[vvar]
+	0x7ffda79e9000-0x7ffda79eb000	[vdso]
+	0xffffffffff600000-0xffffffffff601000	[vsyscall]
+==16776==End of process memory map.
+==16776==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_common.cc:120 "((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e56b2 in __sanitizer::ReportMmapFailureAndDie(unsigned long, char const*, char const*, int, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e56b2)
+    #3 0x4efb35 in __sanitizer::MmapOrDie(unsigned long, char const*, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4efb35)
+    #4 0x4233fd in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4233fd)
+    #5 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #6 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #7 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #8 0x7f72c32e4bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #9 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #19
+/home/kinzhong/Downloads/ffjpeg/out/f04/crashes/id:000002,sig:06,src:000000,op:havoc,rep:4
+==16905==WARNING: AddressSanitizer failed to allocate 0x1b1b0012000 bytes
+==16905==AddressSanitizer's allocator is terminating the process instead of returning 0
+==16905==If you don't like this behavior set allocator_may_return_null=1
+==16905==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f3c7b2d6bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #20
+/home/kinzhong/Downloads/ffjpeg/out/f04/crashes/id:000003,sig:06,src:000000,op:havoc,rep:2
+==17045==WARNING: AddressSanitizer failed to allocate 0xffffffffffff9ffc bytes
+==17045==AddressSanitizer's allocator is terminating the process instead of returning 0
+==17045==If you don't like this behavior set allocator_may_return_null=1
+==17045==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7f0e32506bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #21
+/home/kinzhong/Downloads/ffjpeg/out/f04/crashes/id:000004,sig:06,src:000073,op:havoc,rep:2
+==17206==WARNING: AddressSanitizer failed to allocate 0xffffffff80000000 bytes
+==17206==AddressSanitizer's allocator is terminating the process instead of returning 0
+==17206==If you don't like this behavior set allocator_may_return_null=1
+==17206==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7fa17ee56bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #22
+/home/kinzhong/Downloads/ffjpeg/out/f04/crashes/id:000005,sig:06,src:000008+000102,op:splice,rep:32
+==17482==WARNING: AddressSanitizer failed to allocate 0xfffffffffefe27e8 bytes
+==17482==AddressSanitizer's allocator is terminating the process instead of returning 0
+==17482==If you don't like this behavior set allocator_may_return_null=1
+==17482==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7fd87cf9fbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #23
+/home/kinzhong/Downloads/ffjpeg/out/f05/crashes/id:000000,sig:06,src:000000,op:havoc,rep:4
+==17673==WARNING: AddressSanitizer failed to allocate 0x12679dfb98198d8 bytes
+==17673==AddressSanitizer's allocator is terminating the process instead of returning 0
+==17673==If you don't like this behavior set allocator_may_return_null=1
+==17673==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7fb14ba80bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #24
+/home/kinzhong/Downloads/ffjpeg/out/f05/crashes/id:000001,sig:06,src:000000,op:havoc,rep:4
+==17796==ERROR: AddressSanitizer failed to allocate 0x13c5759000 (84917194752) bytes of LargeMmapAllocator (error code: 12)
+==17796==Process memory map follows:
+	0x000000400000-0x000000548000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000747000-0x000000748000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000748000-0x00000074b000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x00000074b000-0x0000013c0000	
+	0x00007fff7000-0x00008fff7000	
+	0x00008fff7000-0x02008fff7000	
+	0x02008fff7000-0x10007fff8000	
+	0x600000000000-0x607000000000	
+	0x607000000000-0x607000010000	
+	0x607000010000-0x607e00000000	
+	0x607e00000000-0x607e00010000	
+	0x607e00010000-0x616000000000	
+	0x616000000000-0x616000010000	
+	0x616000010000-0x616e00000000	
+	0x616e00000000-0x616e00010000	
+	0x616e00010000-0x621000000000	
+	0x621000000000-0x621000010000	
+	0x621000010000-0x621e00000000	
+	0x621e00000000-0x621e00010000	
+	0x621e00010000-0x640000000000	
+	0x640000000000-0x640000003000	
+	0x7fcd51100000-0x7fcd51200000	
+	0x7fcd51300000-0x7fcd51400000	
+	0x7fcd51500000-0x7fcd51600000	
+	0x7fcd51700000-0x7fcd51800000	
+	0x7fcd518ea000-0x7fcd53c3c000	
+	0x7fcd53c3c000-0x7fcd53e23000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fcd53e23000-0x7fcd54023000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fcd54023000-0x7fcd54027000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fcd54027000-0x7fcd54029000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7fcd54029000-0x7fcd5402d000	
+	0x7fcd5402d000-0x7fcd54044000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fcd54044000-0x7fcd54243000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fcd54243000-0x7fcd54244000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fcd54244000-0x7fcd54245000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7fcd54245000-0x7fcd54248000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fcd54248000-0x7fcd54447000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fcd54447000-0x7fcd54448000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fcd54448000-0x7fcd54449000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7fcd54449000-0x7fcd545e6000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fcd545e6000-0x7fcd547e5000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fcd547e5000-0x7fcd547e6000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fcd547e6000-0x7fcd547e7000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7fcd547e7000-0x7fcd547ee000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fcd547ee000-0x7fcd549ed000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fcd549ed000-0x7fcd549ee000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fcd549ee000-0x7fcd549ef000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7fcd549ef000-0x7fcd54a09000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fcd54a09000-0x7fcd54c08000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fcd54c08000-0x7fcd54c09000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fcd54c09000-0x7fcd54c0a000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7fcd54c0a000-0x7fcd54c0e000	
+	0x7fcd54c0e000-0x7fcd54c37000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fcd54cb2000-0x7fcd54e21000	
+	0x7fcd54e21000-0x7fcd54e37000	
+	0x7fcd54e37000-0x7fcd54e38000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fcd54e38000-0x7fcd54e39000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7fcd54e39000-0x7fcd54e3a000	
+	0x7ffc773b4000-0x7ffc773d5000	[stack]
+	0x7ffc773ec000-0x7ffc773ef000	[vvar]
+	0x7ffc773ef000-0x7ffc773f1000	[vdso]
+	0xffffffffff600000-0xffffffffff601000	[vsyscall]
+==17796==End of process memory map.
+==17796==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_common.cc:120 "((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e56b2 in __sanitizer::ReportMmapFailureAndDie(unsigned long, char const*, char const*, int, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e56b2)
+    #3 0x4efb35 in __sanitizer::MmapOrDie(unsigned long, char const*, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4efb35)
+    #4 0x4233fd in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4233fd)
+    #5 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #6 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #7 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #8 0x7fcd53c5dbf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #9 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #25
+/home/kinzhong/Downloads/ffjpeg/out/f05/crashes/id:000002,sig:06,src:000000,op:havoc,rep:16
+==17926==WARNING: AddressSanitizer failed to allocate 0x1b1b361b1b0 bytes
+==17926==AddressSanitizer's allocator is terminating the process instead of returning 0
+==17926==If you don't like this behavior set allocator_may_return_null=1
+==17926==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7fb660d68bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #26
+/home/kinzhong/Downloads/ffjpeg/out/f05/crashes/id:000003,sig:06,src:000036,op:havoc,rep:2
+==18053==WARNING: AddressSanitizer failed to allocate 0xffffffffcc320280 bytes
+==18053==AddressSanitizer's allocator is terminating the process instead of returning 0
+==18053==If you don't like this behavior set allocator_may_return_null=1
+==18053==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7f03f7025bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #27
+/home/kinzhong/Downloads/ffjpeg/out/f05/crashes/id:000004,sig:06,src:000087,op:havoc,rep:4
+==18290==WARNING: AddressSanitizer failed to allocate 0xffffffffe800000a bytes
+==18290==AddressSanitizer's allocator is terminating the process instead of returning 0
+==18290==If you don't like this behavior set allocator_may_return_null=1
+==18290==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7eff9cf51bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #28
+/home/kinzhong/Downloads/ffjpeg/out/f06/crashes/id:000000,sig:06,src:000000,op:havoc,rep:8
+==18589==WARNING: AddressSanitizer failed to allocate 0x2d5a5a2d000 bytes
+==18589==AddressSanitizer's allocator is terminating the process instead of returning 0
+==18589==If you don't like this behavior set allocator_may_return_null=1
+==18589==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7fdd1164ebf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #29
+/home/kinzhong/Downloads/ffjpeg/out/f06/crashes/id:000001,sig:06,src:000000,op:havoc,rep:2
+==18715==WARNING: AddressSanitizer failed to allocate 0xffffffffffff9ffc bytes
+==18715==AddressSanitizer's allocator is terminating the process instead of returning 0
+==18715==If you don't like this behavior set allocator_may_return_null=1
+==18715==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7ff8806a2bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #30
+/home/kinzhong/Downloads/ffjpeg/out/f06/crashes/id:000002,sig:06,src:000000,op:havoc,rep:16
+==18832==ERROR: AddressSanitizer failed to allocate 0x2424545000 (155228327936) bytes of LargeMmapAllocator (error code: 12)
+==18832==Process memory map follows:
+	0x000000400000-0x000000548000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000747000-0x000000748000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x000000748000-0x00000074b000	/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg
+	0x00000074b000-0x0000013c0000	
+	0x00007fff7000-0x00008fff7000	
+	0x00008fff7000-0x02008fff7000	
+	0x02008fff7000-0x10007fff8000	
+	0x600000000000-0x607000000000	
+	0x607000000000-0x607000010000	
+	0x607000010000-0x607e00000000	
+	0x607e00000000-0x607e00010000	
+	0x607e00010000-0x616000000000	
+	0x616000000000-0x616000010000	
+	0x616000010000-0x616e00000000	
+	0x616e00000000-0x616e00010000	
+	0x616e00010000-0x621000000000	
+	0x621000000000-0x621000010000	
+	0x621000010000-0x621e00000000	
+	0x621e00000000-0x621e00010000	
+	0x621e00010000-0x640000000000	
+	0x640000000000-0x640000003000	
+	0x7f86cdc00000-0x7f86cdd00000	
+	0x7f86cde00000-0x7f86cdf00000	
+	0x7f86ce000000-0x7f86ce100000	
+	0x7f86ce200000-0x7f86ce300000	
+	0x7f86ce396000-0x7f86d06e8000	
+	0x7f86d06e8000-0x7f86d08cf000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f86d08cf000-0x7f86d0acf000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f86d0acf000-0x7f86d0ad3000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f86d0ad3000-0x7f86d0ad5000	/lib/x86_64-linux-gnu/libc-2.27.so
+	0x7f86d0ad5000-0x7f86d0ad9000	
+	0x7f86d0ad9000-0x7f86d0af0000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f86d0af0000-0x7f86d0cef000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f86d0cef000-0x7f86d0cf0000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f86d0cf0000-0x7f86d0cf1000	/lib/x86_64-linux-gnu/libgcc_s.so.1
+	0x7f86d0cf1000-0x7f86d0cf4000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f86d0cf4000-0x7f86d0ef3000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f86d0ef3000-0x7f86d0ef4000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f86d0ef4000-0x7f86d0ef5000	/lib/x86_64-linux-gnu/libdl-2.27.so
+	0x7f86d0ef5000-0x7f86d1092000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f86d1092000-0x7f86d1291000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f86d1291000-0x7f86d1292000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f86d1292000-0x7f86d1293000	/lib/x86_64-linux-gnu/libm-2.27.so
+	0x7f86d1293000-0x7f86d129a000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f86d129a000-0x7f86d1499000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f86d1499000-0x7f86d149a000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f86d149a000-0x7f86d149b000	/lib/x86_64-linux-gnu/librt-2.27.so
+	0x7f86d149b000-0x7f86d14b5000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f86d14b5000-0x7f86d16b4000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f86d16b4000-0x7f86d16b5000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f86d16b5000-0x7f86d16b6000	/lib/x86_64-linux-gnu/libpthread-2.27.so
+	0x7f86d16b6000-0x7f86d16ba000	
+	0x7f86d16ba000-0x7f86d16e3000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f86d175e000-0x7f86d18cd000	
+	0x7f86d18cd000-0x7f86d18e3000	
+	0x7f86d18e3000-0x7f86d18e4000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f86d18e4000-0x7f86d18e5000	/lib/x86_64-linux-gnu/ld-2.27.so
+	0x7f86d18e5000-0x7f86d18e6000	
+	0x7ffceea53000-0x7ffceea74000	[stack]
+	0x7ffceeacc000-0x7ffceeacf000	[vvar]
+	0x7ffceeacf000-0x7ffceead1000	[vdso]
+	0xffffffffff600000-0xffffffffff601000	[vsyscall]
+==18832==End of process memory map.
+==18832==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_common.cc:120 "((0 && "unable to mmap")) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e56b2 in __sanitizer::ReportMmapFailureAndDie(unsigned long, char const*, char const*, int, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e56b2)
+    #3 0x4efb35 in __sanitizer::MmapOrDie(unsigned long, char const*, bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4efb35)
+    #4 0x4233fd in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4233fd)
+    #5 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #6 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #7 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #8 0x7f86d0709bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #9 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #31
+/home/kinzhong/Downloads/ffjpeg/out/f06/crashes/id:000003,sig:06,src:000000,op:havoc,rep:2
+==18959==WARNING: AddressSanitizer failed to allocate 0x12000048000 bytes
+==18959==AddressSanitizer's allocator is terminating the process instead of returning 0
+==18959==If you don't like this behavior set allocator_may_return_null=1
+==18959==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50be4f in bmp_load /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/bmp.c:46:18
+    #6 0x50bbda in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:29:9
+    #7 0x7f647e5f0bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #32
+/home/kinzhong/Downloads/ffjpeg/out/f06/crashes/id:000004,sig:06,src:000109+000102,op:splice,rep:32
+==19094==WARNING: AddressSanitizer failed to allocate 0xffffffff80380180 bytes
+==19094==AddressSanitizer's allocator is terminating the process instead of returning 0
+==19094==If you don't like this behavior set allocator_may_return_null=1
+==19094==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7efdc8a91bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
+Error No. #33
+/home/kinzhong/Downloads/ffjpeg/out/f06/crashes/id:000005,sig:06,src:000118+000063,op:splice,rep:2
+==19350==WARNING: AddressSanitizer failed to allocate 0xffffffff800001e4 bytes
+==19350==AddressSanitizer's allocator is terminating the process instead of returning 0
+==19350==If you don't like this behavior set allocator_may_return_null=1
+==19350==AddressSanitizer CHECK failed: /build/llvm-toolchain-4.0-iMkWTm/llvm-toolchain-4.0-4.0.1/projects/compiler-rt/lib/sanitizer_common/sanitizer_allocator.cc:221 "((0)) != (0)" (0x0, 0x0)
+    #0 0x4dad75 in __asan::AsanCheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4dad75)
+    #1 0x4f6915 in __sanitizer::CheckFailed(char const*, int, char const*, unsigned long long, unsigned long long) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4f6915)
+    #2 0x4e0962 in __sanitizer::ReportAllocatorCannotReturnNull(bool) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4e0962)
+    #3 0x422a56 in __asan::asan_malloc(unsigned long, __sanitizer::BufferedStackTrace*) (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x422a56)
+    #4 0x4d1b6b in malloc (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x4d1b6b)
+    #5 0x50f511 in jfif_encode /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/jfif.c:681:22
+    #6 0x50bbe2 in main /home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg.c:30:16
+    #7 0x7fe11f716bf6 in __libc_start_main /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:310
+    #8 0x41c539 in _start (/home/kinzhong/Downloads/ffjpeg/ASAN/ffjpeg/src/ffjpeg+0x41c539)
+
