@@ -24,4 +24,4 @@ python3 crash-analyser.py $CRASH-LOG
 # Cross Compatibility with Other Fuzzers
 As the analyser purely uses AddressSanitizer for its analysis, other fuzzers are also compatible. 
 
-Currently, run-crashes.sh uses AFL's crash id naming system to identify crashes. Thus, modify the header variable located at the top of [run-crashes.sh](https://github.com/kinzhong/fuzzing-automation-tools/blob/main/automated-crash-analysis/run-crashes.sh) to something that can correctly match the crash names. 
+Currently, run-crashes.sh uses AFL's crash id naming system to identify crashes. Thus, modify the header variable located at the top of [run-crashes.sh](https://github.com/kinzhong/fuzzing-automation-tools/blob/main/automated-crash-analysis/run-crashes.sh) to something that can correctly match the crash file names. 
