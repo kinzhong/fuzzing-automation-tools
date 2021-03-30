@@ -3,7 +3,7 @@ This tool automates crash triaging for fuzzing using.
 
 Firstly, run-crashes.sh will find and execute all obtained crash files from fuzzing and compiling them into a large logfile. 
 
-Next, the crash analyser will analyse the logs, interpret the AddressSanitizer error messages and perform crash bucketing to provide a report on the findings. It will also identify vulnerabilities such as buffer overflows and null pointer dereference. The analyser generates two reports. Main_report.txt contains all key findings while full_error_analysis contains the analysis of every crash provided. 
+Next, the crash analyser will analyse the logs, interpret the AddressSanitizer error messages and perform crash bucketing to provide a report on the findings. It will also identify vulnerabilities such as buffer overflows and null pointer dereference. The analyser generates two reports. main_report.txt contains all key findings while full_error_analysis.txt contains the crash analysis for every crash file. 
 
 Samples reports can be found [here](https://github.com/kinzhong/fuzzing-automation-tools/tree/main/automated-crash-analysis/sample_reports).
 
