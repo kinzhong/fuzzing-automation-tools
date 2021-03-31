@@ -21,7 +21,7 @@ done
 
 # Main Program                                                              
 
-if [ "$#" -ne 4 ]; then
+if [ "$#" -ne 5 ]; then
 	echo "Illegal number of arguments!"
 	DisplayHelp
 	exit
