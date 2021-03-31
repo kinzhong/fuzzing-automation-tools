@@ -65,8 +65,3 @@ do
 		fi
 	done
 done
-
-echo "Test Case Minimisation Complete"
-
-
-rm -R temp_dir
