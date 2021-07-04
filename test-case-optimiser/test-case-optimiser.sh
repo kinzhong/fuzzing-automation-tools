@@ -52,7 +52,7 @@ no_of_files=`ls temp_dir | wc -l`
 
 #echo total cores $cores
 
-for i in `seq 0 $cores $no_of_files`
+for i in `seq 0 $((cores + 1)) $no_of_files`
 do
 	for j in `seq 0 $cores`	
 	do
